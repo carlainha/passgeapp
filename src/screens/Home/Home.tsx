@@ -5,7 +5,8 @@ import { StatusBar } from 'expo-status-bar';
 import styles from "./HomeStyles";
 
 import { CpsLogo } from "../../components/CpsLogo/CpsLogo";
-import { CpsTextInput } from "../../components/CpsTextInput/CpsTextInput";
+
+import { CpsButton } from "../../components/CpsButton/CpsButton";
 
 export default function Home() {
     return(
@@ -13,11 +14,10 @@ export default function Home() {
             <View style={styles.logoContainer}>
                 <CpsLogo/>
             </View>
-            <View>
-                <CpsTextInput/>
+            <View style={styles.inputContainer}>
+                <CpsButton/>
             </View>
-            <Text>Open up App.tsx to start working on your app!</Text>
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
         </View>
     );
 }
